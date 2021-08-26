@@ -18,7 +18,6 @@ public class Usuario {
     public Usuario() {
     }
 
-    //Sobrecarga - Overload
     public Usuario(Integer id) {
         this.id = id;
     }

@@ -1,13 +1,13 @@
 package ecommerce;
 
-public class Cidade extends Estado{
+public class Cidade extends Estado {
     private Integer id;
     private String nome;
 
-    public Cidade(Integer id, String sigla, String nome, Integer id1, String nome1) {
+    public Cidade(Integer id, String sigla, String nome, Integer idCidade, String nomeCidade) {
         super(id, sigla, nome);
-        this.id = id1;
-        this.nome = nome1;
+        this.id = idCidade;
+        this.nome = nomeCidade;
     }
 
     @Override

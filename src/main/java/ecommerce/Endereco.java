@@ -14,9 +14,9 @@ public class Endereco extends Cliente {
     private Integer telefone;
     private String bairro;
 
-    public Endereco(Integer id, String nomeCompleto, String email, String senha, LocalDate dataCadastro, LocalTime horaCadastro, LocalDate dataUltimaAtualizacao, String urlFoto, String fotoUrl, String cpf, LocalDate dataNascimento, Cliente.Endereco endereco, Integer id1, String rua, Integer numero, String cep, String complemento, Integer telefone, String bairro) {
+    public Endereco(Integer id, String nomeCompleto, String email, String senha, LocalDate dataCadastro, LocalTime horaCadastro, LocalDate dataUltimaAtualizacao, String urlFoto, String fotoUrl, String cpf, LocalDate dataNascimento, Cliente.Endereco endereco, Integer idEndereco, String rua, Integer numero, String cep, String complemento, Integer telefone, String bairro) {
         super(id, nomeCompleto, email, senha, dataCadastro, horaCadastro, dataUltimaAtualizacao, urlFoto, fotoUrl, cpf, dataNascimento, endereco);
-        this.id = id1;
+        this.id = idEndereco;
         this.rua = rua;
         this.numero = numero;
         this.cep = cep;
