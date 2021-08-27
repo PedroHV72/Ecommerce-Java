@@ -3,6 +3,7 @@ package ecommerce;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
+import java.util.List;
 
 
 public class Cliente extends Usuario {
@@ -11,13 +12,15 @@ public class Cliente extends Usuario {
     private String cpf;
     private LocalDate dataNascimento;
     private Endereco endereco;
+    private List<Pedido> pedidoList;
 
-    public Cliente(Integer id, String nomeCompleto, String email, String senha, LocalDate dataCadastro, LocalTime horaCadastro, LocalDate dataUltimaAtualizacao, String urlFoto, String fotoUrl, String cpf, LocalDate dataNascimento, Endereco endereco) {
+    public Cliente(Integer id, String nomeCompleto, String email, String senha, LocalDate dataCadastro, LocalTime horaCadastro, LocalDate dataUltimaAtualizacao, String urlFoto, String fotoUrl, String cpf, LocalDate dataNascimento, Endereco endereco, List<Pedido> pedidoList) {
         super(id, nomeCompleto, email, senha, dataCadastro, horaCadastro, dataUltimaAtualizacao, urlFoto);
         this.fotoUrl = fotoUrl;
         this.cpf = cpf;
         this.dataNascimento = dataNascimento;
         this.endereco = endereco;
+        this.pedidoList = pedidoList;
     }
 
     public String getFotoUrl() {
@@ -50,6 +53,14 @@ public class Cliente extends Usuario {
 
     public void setEndereco(Endereco endereco) {
         this.endereco = endereco;
+    }
+
+    public List<Pedido> getPedidoList() {
+        return pedidoList;
+    }
+
+    public void setPedidoList(List<Pedido> pedidoList) {
+        this.pedidoList = pedidoList;
     }
 
     private static class Endereco {
