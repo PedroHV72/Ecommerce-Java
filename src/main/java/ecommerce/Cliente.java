@@ -13,6 +13,7 @@ public class Cliente extends Usuario {
     private LocalDate dataNascimento;
     private Endereco endereco;
     private List<Pedido> pedidoList;
+    private Cartao cartao;
 
     public Cliente(Integer id, String nomeCompleto, String email, String senha, LocalDate dataCadastro, LocalTime horaCadastro, LocalDate dataUltimaAtualizacao, String urlFoto, String fotoUrl, String cpf, LocalDate dataNascimento, Endereco endereco, List<Pedido> pedidoList) {
         super(id, nomeCompleto, email, senha, dataCadastro, horaCadastro, dataUltimaAtualizacao, urlFoto);
@@ -61,6 +62,14 @@ public class Cliente extends Usuario {
 
     public void setPedidoList(List<Pedido> pedidoList) {
         this.pedidoList = pedidoList;
+    }
+
+    public Cartao getCartao() {
+        return cartao;
+    }
+
+    public void setCartao(Cartao cartao) {
+        this.cartao = cartao;
     }
 
     private static class Endereco {

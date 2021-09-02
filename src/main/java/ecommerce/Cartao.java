@@ -2,11 +2,11 @@ package ecommerce;
 
 import java.time.LocalTime;
 
-public class Pagamento {
+public class Cartao {
     private Integer id;
     private LocalTime dataCriacao;
     private Boolean excluido;
-    private Cartao cartao;
+    private TipoCartao tipoCartao;
 
     public Integer getId() {
         return id;
@@ -32,11 +32,11 @@ public class Pagamento {
         this.excluido = excluido;
     }
 
-    public Cartao getCartao() {
-        return cartao;
+    public TipoCartao getTipoCartao() {
+        return tipoCartao;
     }
 
-    public void setCartao(Cartao cartao) {
-        this.cartao = cartao;
+    public void setTipoCartao(TipoCartao tipoCartao) {
+        this.tipoCartao = tipoCartao;
     }
 }
