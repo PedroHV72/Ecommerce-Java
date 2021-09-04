@@ -1,5 +1,8 @@
 package ecommerce;
 
-public class PedidoStatus {
-    private Enum Aguardando_Pagamento;
+public enum PedidoStatus {
+    AGUARDANDO_PAGAMENTO,
+    SEPARANDO_ESTOQUE,
+    ENTREGUE_TRANSPORTADORA,
+    ENTREGUE_CLIENTE
 }
